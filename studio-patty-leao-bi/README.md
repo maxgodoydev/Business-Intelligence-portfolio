@@ -1,159 +1,320 @@
-<div align="center">
+# Studio Patty Leão | Business Intelligence
 
-<img
-  width="100%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=140&text=STUDIO%20PATTY%20LE%C3%83O%20BI&fontSize=28&fontColor=FACC15&fontAlignY=50&color=0:0D0D0D,100:18181B"
-/>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:18181B,50:27272A,100:854D0E&height=180&section=header&text=Studio%20Patty%20Le%C3%A3o&fontSize=36&fontColor=FDE68A&fontAlignY=38&desc=Business%20Intelligence%20%7C%20Power%20BI&descAlignY=60&descSize=18" width="100%" />
+</p>
 
-<br><br>
+<p align="center">
+  <img src="https://img.shields.io/badge/Power%20BI-Data%20Visualization-F2C811?style=flat-square&logo=powerbi&logoColor=000000" />
+  <img src="https://img.shields.io/badge/DAX-Measures-2563EB?style=flat-square" />
+  <img src="https://img.shields.io/badge/Power%20Query-Data%20Transformation-0F766E?style=flat-square" />
+  <img src="https://img.shields.io/badge/SQL-Data%20Analysis-64748B?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+</p>
 
-<img src="https://img.shields.io/badge/POWER%20BI-0F172A?style=flat-square&logo=powerbi&logoColor=FACC15" />
-<img src="https://img.shields.io/badge/DAX-0F172A?style=flat-square&labelColor=0F172A&color=FACC15" />
-<img src="https://img.shields.io/badge/POWER%20QUERY-0F172A?style=flat-square&labelColor=0F172A&color=FACC15" />
-<img src="https://img.shields.io/badge/SQL%20SERVER-0F172A?style=flat-square&logo=microsoftsqlserver&logoColor=FACC15" />
+## O projeto em poucas palavras
 
-</div>
+Como transformar os registros de um salão de beleza em informações úteis para acompanhar o negócio?
+
+Este projeto de Business Intelligence foi desenvolvido a partir do contexto operacional do **Studio Patty Leão**, uma microempresa do segmento de beleza. A proposta é organizar informações sobre atendimentos, serviços, profissionais, pagamentos, cancelamentos e produtos em dashboards que facilitem a análise da operação.
+
+O objetivo não é aplicar indicadores de grandes redes ou empresas de alto faturamento, mas demonstrar como dados organizados podem apoiar decisões cotidianas de um pequeno negócio.
+
+**Projeto principal:** [Studio Patty Leão — Sistema de Gestão](https://github.com/maxgodoydev/Studio_Patty_Leao)
 
 ---
 
-## Sobre o projeto
+# 1. Dashboards e análises
 
-Dashboard operacional em Power BI conectado a um banco SQL Server (`studio_patty_leao`) que espelha um sistema real de gestão de salão de beleza — agendamento, caixa, estoque, fornecedores, notas fiscais e vendas de produto. O modelo tem 20 tabelas (incluindo uma view SQL consumida diretamente) e 19 medidas DAX autorais, estruturado como um relatório estratégico que responde 10 perguntas de negócio.
+A visualização dos relatórios vem primeiro porque é nela que o trabalho analítico se torna mais fácil de compreender.
 
-Arquivo principal: `Studio_Patty_Leao_BI.pbix`
+## 01. Financeiro e sazonalidade
+
+![Dashboard de análise financeira e sazonalidade](./assets/01-financeiro-sazonalidade.png)
+
+**Pergunta de negócio:** como o movimento financeiro varia ao longo do período analisado?
+
+Esta análise permite observar variações entre períodos, identificar meses com maior ou menor movimentação e investigar possíveis padrões de sazonalidade.
+
+**Como isso pode ajudar o salão?**
+- Comparar períodos de maior e menor movimento.
+- Planejar despesas e compras de insumos.
+- Acompanhar mudanças no comportamento financeiro.
+- Investigar variações antes de tomar decisões.
+
+## 02. Resumo financeiro
+
+![Dashboard de resumo financeiro](./assets/02-resumo-financeiro.png)
+
+**Pergunta de negócio:** qual é a situação financeira apresentada pelos registros do sistema?
+
+O painel reúne indicadores para facilitar a leitura das movimentações financeiras e acompanhar a evolução dos valores registrados.
+
+**Como isso pode ajudar o salão?**
+- Consultar os principais indicadores sem analisar registros individualmente.
+- Comparar entradas financeiras entre períodos.
+- Identificar variações que merecem investigação.
+- Apoiar o acompanhamento rotineiro do negócio.
+
+> Os valores financeiros devem ser apresentados em reais e em uma escala compatível com uma microempresa. Entradas registradas não devem ser confundidas automaticamente com lucro, pois o lucro depende também dos custos e das despesas considerados.
+
+## 03. Receita por especialidade
+
+![Dashboard de receita por especialidade](./assets/03-receita-especialidade.png)
+
+**Pergunta de negócio:** quais serviços e especialidades representam maior participação na receita?
+
+A análise compara o desempenho financeiro das categorias de serviços, ajudando a compreender quais atividades têm maior contribuição para o faturamento registrado.
+
+**Como isso pode ajudar o salão?**
+- Identificar os serviços com maior participação financeira.
+- Comparar especialidades.
+- Avaliar oportunidades de divulgação.
+- Investigar diferenças entre quantidade de atendimentos e receita.
+
+## 04. Desempenho dos profissionais
+
+![Dashboard de desempenho dos profissionais](./assets/04-performance-profissionais.png)
+
+**Pergunta de negócio:** quais profissionais apresentam maior volume de serviços ou receita?
+
+O relatório permite comparar os resultados registrados por profissional e compreender como os atendimentos estão distribuídos.
+
+**Como isso pode ajudar o salão?**
+- Acompanhar o volume de atendimentos.
+- Comparar a participação de cada profissional.
+- Identificar diferenças entre quantidade de serviços e receita.
+- Apoiar o planejamento da agenda.
+
+Os resultados devem ser interpretados considerando a disponibilidade de cada profissional, os serviços realizados e o período selecionado.
+
+## 05. Formas de pagamento
+
+![Dashboard de formas de pagamento](./assets/05-pagamento-preferido.png)
+
+**Pergunta de negócio:** quais formas de pagamento aparecem com maior frequência ou movimentação financeira?
+
+A análise permite comparar os meios de pagamento registrados e observar a distribuição das movimentações.
+
+**Como isso pode ajudar o salão?**
+- Compreender os meios de pagamento mais utilizados.
+- Acompanhar a distribuição dos recebimentos.
+- Planejar a rotina de conferência do caixa.
+- Investigar mudanças no comportamento dos clientes.
+
+## 06. Cancelamentos
+
+![Dashboard de cancelamentos](./assets/06-cancelamentos.png)
+
+**Pergunta de negócio:** qual é a participação dos cancelamentos nos agendamentos?
+
+O painel permite acompanhar a ocorrência de cancelamentos e comparar sua distribuição entre períodos.
+
+**Como isso pode ajudar o salão?**
+- Identificar períodos com maior incidência de cancelamentos.
+- Investigar possíveis padrões.
+- Avaliar a necessidade de confirmação de horários.
+- Acompanhar os efeitos de futuras ações de organização da agenda.
+
+A taxa deve considerar uma definição consistente de cancelamento e o total de agendamentos utilizado como base.
+
+## 07. Fluxo semanal
+
+![Dashboard de fluxo semanal](./assets/07-fluxo-semanal.png)
+
+**Pergunta de negócio:** quais dias da semana concentram mais atendimentos?
+
+A análise compara o movimento semanal para identificar os dias com maior concentração de serviços realizados.
+
+**Como isso pode ajudar o salão?**
+- Planejar a distribuição dos horários.
+- Avaliar a disponibilidade dos profissionais.
+- Organizar a rotina da recepção.
+- Identificar períodos de menor movimento que possam receber ações de divulgação.
+
+## 08. Projeção de faturamento
+
+![Dashboard de projeção de faturamento](./assets/08-projecao-faturamento.png)
+
+**Pergunta de negócio:** qual seria uma estimativa de faturamento para o próximo período com base no histórico disponível?
+
+A projeção utiliza o histórico financeiro como referência para construir um cenário estimado.
+
+**Como isso pode ajudar o salão?**
+- Criar uma referência inicial para o planejamento.
+- Comparar o valor estimado com o resultado realizado.
+- Discutir metas financeiras compatíveis com o porte da empresa.
+- Identificar a necessidade de revisar premissas quando os resultados mudarem.
+
+**Importante:** uma projeção baseada na repetição do resultado de um período anterior com uma taxa fixa de crescimento é um cenário simplificado, não uma previsão estatística garantida.
 
 ---
 
-## Modelo de dados
+---
 
-O schema segue a estrutura operacional do sistema (não é uma tabela única "achatada"):
+# 🧭 2. Perguntas de negócio respondidas
 
-| Domínio | Tabelas |
+O projeto foi desenvolvido para investigar questões importantes da rotina de um salão de beleza de pequeno porte.
+
+| 🔎 Pergunta de negócio | 📊 Análise | 🎯 Aplicação prática |
+|---|---|---|
+| 💰 Como o financeiro varia ao longo do tempo? | Evolução e sazonalidade | Planejamento financeiro |
+| 🧾 Qual é o ticket médio? | Valor médio conforme a base definida | Acompanhamento dos atendimentos |
+| 🛍️ Como se distribuem serviços e vendas de produtos? | Comparação entre categorias | Identificação das fontes de receita |
+| ✂️ Quais serviços apresentam maior receita? | Ranking de serviços | Planejamento e divulgação |
+| 👥 Quais profissionais apresentam maior receita? | Comparação por profissional | Organização da operação |
+| 💳 Quais formas de pagamento são mais utilizadas? | Distribuição dos pagamentos | Conferência do caixa |
+| 📅 Qual é a taxa de cancelamento? | Cancelamentos sobre a base de agendamentos | Organização da agenda |
+| 📈 Quais dias concentram mais atendimentos? | Movimento por dia da semana | Planejamento de horários |
+| 📦 Quais produtos apresentam maior ou menor giro? | Análise de vendas e estoque | Planejamento de reposição |
+| 🔮 Qual é a estimativa para o próximo mês? | Projeção baseada no histórico | Planejamento de curto prazo |
+
+---
+
+# 📌 3. Principais análises e resultados
+
+Esta seção conecta os indicadores à realidade operacional do salão. Mais do que apresentar gráficos, o objetivo é explicar o que pode ser observado e como essas informações podem apoiar decisões.
+
+### 💰 Análise financeira
+- **O que observar:** evolução das movimentações e diferenças entre períodos.
+- **Por que importa:** ajuda a identificar mudanças no movimento financeiro.
+- **Aplicação:** planejamento de despesas, compras e acompanhamento do caixa.
+
+### ✂️ Desempenho dos serviços
+- **O que observar:** serviços com maior participação na receita.
+- **Por que importa:** permite comparar a contribuição financeira das especialidades.
+- **Aplicação:** planejamento de divulgação e avaliação do portfólio de serviços.
+
+### 👥 Desempenho dos profissionais
+- **O que observar:** quantidade de atendimentos e receita por profissional.
+- **Por que importa:** ajuda a entender como o trabalho está distribuído.
+- **Aplicação:** organização da agenda e análise da capacidade de atendimento.
+
+### 💳 Formas de pagamento
+- **O que observar:** distribuição das movimentações por meio de pagamento.
+- **Por que importa:** facilita a compreensão dos recebimentos registrados.
+- **Aplicação:** conferência financeira e organização da rotina de caixa.
+
+### 📅 Cancelamentos e agenda
+- **O que observar:** participação dos cancelamentos e variações por período.
+- **Por que importa:** permite identificar momentos que merecem investigação.
+- **Aplicação:** avaliar procedimentos de confirmação e organização dos horários.
+
+### 📦 Giro de produtos
+- **O que observar:** produtos com maior saída e itens com pouca movimentação.
+- **Por que importa:** ajuda a identificar possíveis excessos ou necessidades de reposição.
+- **Aplicação:** planejamento de compras e acompanhamento do estoque.
+
+### 🔮 Projeção de faturamento
+- **O que observar:** estimativa calculada com base no histórico disponível.
+- **Por que importa:** oferece uma referência para o planejamento financeiro.
+- **Aplicação:** comparação entre valor projetado e resultado posteriormente realizado.
+
+> 💡 **Interpretação dos resultados:** os indicadores devem ser analisados considerando o período, os filtros e a base de cálculo. Uma associação observada nos dados não comprova, por si só, a causa de uma variação.
+
+---
+
+# 🛠️ 4. Como o projeto foi construído
+
+O desenvolvimento envolveu preparação de dados, modelagem, criação de indicadores e construção dos relatórios.
+
+### 🔄 Preparação dos dados — Power Query
+
+- Padronização de informações utilizadas nas análises.
+- Organização dos dados para facilitar a construção dos relatórios.
+- Ajustes de apresentação e consistência dos campos.
+
+### 🧮 Indicadores — DAX
+
+Foram trabalhados cálculos para responder às perguntas de negócio, incluindo:
+
+- Ticket médio.
+- Total de serviços realizados.
+- Receita por serviço e profissional.
+- Distribuição das formas de pagamento.
+- Indicadores de cancelamento.
+- Movimento por dia da semana.
+- Indicadores de giro de produtos.
+- Projeção de faturamento.
+
+### 🧩 Modelagem de dados
+
+A organização dos dados permite relacionar informações operacionais e financeiras para construir indicadores e comparar resultados sob diferentes perspectivas.
+
+### 📊 Visualização de dados
+
+Os relatórios foram divididos por temas para facilitar a leitura e permitir que cada dashboard responda a perguntas específicas do negócio.
+
+---
+
+# 💻 5. Tecnologias e competências
+
+| Tecnologia / competência | Aplicação no projeto |
 |---|---|
-| Agenda | `agendamento`, `agendamento_itens`, `vw_agenda_do_dia` (view SQL) |
-| Financeiro | `caixa`, `tipo_pagto`, `nf` |
-| Pessoas | `cliente`, `profissional`, `usuario`, `admin` |
-| Catálogo | `servicos`, `servicos_itens`, `produto` |
-| Compras/Estoque | `fornecedor`, `pedido_compra`, `pedido_compra_itens`, `estoque` |
-| Vendas | `venda`, `venda_itens` |
-
-**Relacionamentos principais:**
-
-```
-agendamento (M) ──── (1) cliente
-agendamento_itens (M) ──── (1) profissional
-agendamento_itens (M) ──── (1) servicos
-caixa (M) ──── (1) agendamento
-caixa (M) ──── (1) tipo_pagto
-caixa (M) ──── (1) venda
-venda (M) ──── (1) cliente
-servicos_itens (M) ──── (1) produto   -- consumo de insumo por serviço
-```
-
-`servicos_itens` conecta serviço a produto consumido (ex: tinta usada numa coloração) — o modelo distingue serviço prestado de item de estoque baixado, o que é a diferença entre uma modelagem de curso e uma que reflete operação real.
+| 📊 Power BI | Desenvolvimento de dashboards e relatórios |
+| 🧮 DAX | Construção de medidas e indicadores |
+| 🔄 Power Query | Preparação e transformação de dados |
+| 🗄️ SQL | Contexto de consulta e organização de dados |
+| 🧩 Modelagem de dados | Estruturação das informações para análise |
+| 🔎 Análise de negócio | Definição das perguntas e interpretação dos indicadores |
+| 📈 Data Visualization | Comunicação visual dos resultados |
 
 ---
 
-## Medidas DAX
+# 🔗 6. Integração com o sistema principal
 
-**Ticket médio diário**, ignorando o contexto de filtro de agendamento pra calcular sobre todo o período:
+Este projeto de BI está relacionado ao contexto do **Studio Patty Leão**, sistema desenvolvido para apoiar atividades operacionais de um salão de beleza.
 
-```dax
-Ticket Médio Diário =
-VAR FaturamentoTotal = CALCULATE(SUM('caixa'[valor_movimentado]), REMOVEFILTERS('agendamento'))
-VAR DiasTotais = CALCULATE(DISTINCTCOUNT('caixa'[data_hora].[Date]), REMOVEFILTERS('agendamento'))
-RETURN DIVIDE(FaturamentoTotal, DiasTotais)
+O sistema principal contempla funcionalidades como:
+
+- 📅 Agendamentos e atendimentos.
+- 👥 Cadastro e organização de profissionais e clientes.
+- 💰 Movimentações financeiras.
+- 📦 Controle de produtos e estoque.
+- 🛍️ Reservas de produtos.
+
+➡️ **Acesse o projeto principal:** [Studio Patty Leão — Sistema de Gestão](https://github.com/maxgodoydev/Studio_Patty_Leao)
+
+A proposta do BI é complementar esse contexto com análises que ajudam a transformar registros operacionais em informações úteis para o acompanhamento do negócio.
+
+---
+
+# 📁 7. Estrutura do projeto
+
+```text
+Studio_Patty_Leao_BI/
+├── assets/
+│   ├── 01-financeiro-sazonalidade.png
+│   ├── 02-resumo-financeiro.png
+│   ├── 03-receita-especialidade.png
+│   ├── 04-performance-profissionais.png
+│   ├── 05-pagamento-preferido.png
+│   ├── 06-cancelamentos.png
+│   ├── 07-fluxo-semanal.png
+│   └── 08-projecao-faturamento.png
+├── Studio_Patty_Leao_BI.pbix
+└── README.md
 ```
-
-**Dia de maior movimento**, com string dinâmica via `CONCATENATEX`:
-
-```dax
-Dia de Maior Movimento =
-VAR MaxAtendimentos = MAXX(VALUES('agendamento'[Dia da Semana]), [Total Serviços Realizados])
-VAR DiasPico = FILTER(VALUES('agendamento'[Dia da Semana]), [Total Serviços Realizados] = MaxAtendimentos)
-RETURN UPPER(LEFT(CONCATENATEX(DiasPico, 'agendamento'[Dia da Semana], ", "), 1))
-       & RIGHT(CONCATENATEX(DiasPico, 'agendamento'[Dia da Semana], ", "), LEN(...)-1)
-```
-
-**Projeção de faturamento**, construída via DAX aplicando taxa de crescimento sobre o histórico do mesmo mês do ano anterior — não é o recurso de forecast automático do Power BI:
-
-```dax
-Valor Projetado Maio 2026 =
-VAR FaturamentoMaio2025 =
-    CALCULATE(SUM('caixa'[valor_movimentado]), YEAR('caixa'[data_hora]) = 2025, MONTH('caixa'[data_hora]) = 5)
-RETURN FaturamentoMaio2025 * 1.10
-```
-
-**Status de giro de estoque**, classificação condicional:
-
-```dax
-Status de Giro =
-IF([Total Vendido] = 0, "Encalhado",
-   IF([Total Vendido] > 50, "Top Vendas", "Giro Normal"))
-```
-
-No Power Query, a tabela `profissional` recebeu renomeação e padronização dos nomes de profissionais para exibição consistente nos dashboards (ex: unificação de "Ana Cabeleireira" → "Patty (Cabeleireira)" → "Patty Leão").
-
 ---
 
-## Perguntas de negócio respondidas
+<p align="center">
+  <strong>📊 Studio Patty Leão BI</strong><br/>
+  Transformando dados operacionais em informações para apoiar decisões.
+</p>
 
-1. Como está a saúde financeira do Studio ao longo do tempo?
-2. Qual é o ticket médio das nossas clientes?
-3. A "Vitrine Digital" funciona? Qual a diferença de ganho entre serviços e produtos de balcão?
-4. Quais são os 10 serviços que mais trazem dinheiro para o salão?
-5. Quem são os profissionais "top performers" (que mais faturam)?
-6. Qual é o meio de pagamento preferido?
-7. Qual é a nossa taxa de cancelamento de agendamentos?
-8. Quais são os dias da semana de maior movimento?
-9. Quais produtos de revenda estão encalhados e quais saem mais?
-10. Com base no histórico de 2025, o que devemos esperar para o próximo mês?
+<p align="center">
+  <a href="https://github.com/maxgodoydev/Studio_Patty_Leao">🏢 Projeto principal</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/maxgodoydev/Portfolio_Power_BI">📈 Portfólio Power BI</a>
+</p>
 
----
+<p align="center">
+  <sub>Desenvolvido para fins acadêmicos e de portfólio • Business Intelligence • Análise de Dados</sub>
+</p>
 
-## Dashboards
-
-### Saúde financeira — sazonalidade 2025/2026
-![Faturamento e sazonalidade](./assets/01-financeiro-sazonalidade.png)
-
-### Resumo financeiro — ticket, tickets totais e mix serviço x produto
-![Resumo financeiro](./assets/02-resumo-financeiro.png)
-
-### Receita por especialidade
-![Receita por especialidade](./assets/03-receita-especialidade.png)
-
-### Top performers — faturamento e ticket médio por profissional
-![Performance de profissionais](./assets/04-performance-profissionais.png)
-
-### Meio de pagamento preferido
-![Pagamento preferido](./assets/05-pagamento-preferido.png)
-
-### Taxa de cancelamento
-![Cancelamentos](./assets/06-cancelamentos.png)
-
-### Fluxo semanal de atendimentos
-![Fluxo semanal](./assets/07-fluxo-semanal.png)
-
-### Projeção de faturamento — maio/2026
-![Projeção de faturamento](./assets/08-projecao-faturamento.png)
-
----
-
-## Insights
-
-- Cartão de crédito (28%) e PIX (26%) somados respondem por mais da metade do volume financeiro — meios de pagamento instantâneo/digital já superam dinheiro (23%) e débito (23%) juntos.
-- A taxa de cancelamento (6,5%) tem padrão sazonal visível: picos em meses específicos e vale em maio/dezembro — sugere relação com épocas de maior demanda, não distribuição aleatória.
-- Manicure e Corte Masculino lideram receita por especialidade quase empatados (R$ 5,03 Mi e R$ 4,92 Mi), mesmo com público majoritariamente feminino (78%) — o corte masculino tem ticket desproporcional ao tamanho da base de clientes homens.
-- A projeção de maio/2026 (R$ 4,68 Mi) assume repetição do padrão sazonal de maio/2025 com 10% de crescimento — é uma projeção simples, não estatística, útil como referência rápida mas não substitui um modelo de séries temporais.
-
----
-
-## Relação com o projeto principal
-
-Este dashboard é a camada analítica do sistema **Studio Patty Leão — Sistema Operacional de Salão**, conectado diretamente ao banco de dados da aplicação.
-
----
-
-## Observação
-
-Dados simulados/fictícios, com finalidade acadêmica e de portfólio.
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=120&color=0:854D0E,50:27272A,100:18181B"
+    width="100%"
+    alt="Rodapé decorativo do Studio Patty Leão BI"
+  />
+</p>
