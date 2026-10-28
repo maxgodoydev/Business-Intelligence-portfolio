@@ -1,112 +1,91 @@
 <div align="center">
 
-<img
-  width="100%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=160&text=POWER%20BI%20PORTFOLIO&fontSize=36&fontColor=0F172A&fontAlignY=50&color=0:C4F135,100:8FD400&desc=An%C3%A1lise%20de%20Dados%20%C2%B7%20Modelagem%20%C2%B7%20DAX%20%C2%B7%20Dashboards&descAlignY=75&descSize=15&descColor=0F172A"
-/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&section=header&height=160&text=BUSINESS%20INTELLIGENCE&fontSize=34&fontColor=FFFFFF&fontAlignY=45&animation=fadeIn&color=0:0E7490,50:2563EB,100:312E81" />
 
-<br><br>
+<img src="https://capsule-render.vercel.app/api?type=transparent&height=40&text=AN%C3%81LISE%20%20%E2%80%A2%20%20ESTRAT%C3%89GIA%20%20%E2%80%A2%20%20DECIS%C3%95ES&fontSize=13&fontColor=CBD5E1&fontAlignY=35" />
 
-<img src="https://img.shields.io/badge/POWER%20BI-0F172A?style=flat-square&logo=powerbi&logoColor=F2C811" />
-<img src="https://img.shields.io/badge/DAX-0F172A?style=flat-square&labelColor=0F172A&color=C4F135" />
-<img src="https://img.shields.io/badge/MODELAGEM%20RELACIONAL-0F172A?style=flat-square&labelColor=0F172A&color=C4F135" />
-<img src="https://img.shields.io/badge/SQL%20SERVER-0F172A?style=flat-square&logo=microsoftsqlserver&logoColor=CC2927" />
-<img src="https://img.shields.io/badge/STATUS-EM%20EVOLU%C3%87%C3%83O-0F172A?style=flat-square&labelColor=0F172A&color=16A34A" />
+</div>
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<img src="https://img.shields.io/badge/01-DADOS-102A43?style=flat-square&labelColor=164E63" />
+<br><sub>Estruturação e qualidade</sub>
+</td>
+<td align="center">
+<img src="https://img.shields.io/badge/02-INSIGHTS-102A43?style=flat-square&labelColor=1D4ED8" />
+<br><sub>Análise e indicadores</sub>
+</td>
+<td align="center">
+<img src="https://img.shields.io/badge/03-DECISÕES-102A43?style=flat-square&labelColor=4338CA" />
+<br><sub>Valor para o negócio</sub>
+</td>
+</tr>
+</table>
+
+<br>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:0E7490,45:2563EB,100:7C3AED" />
 
 </div>
 
----
 
-## Sobre este portfólio
+## 📊 Sobre o portfólio
 
-Três projetos em Power BI. Dois são dashboards de Business Intelligence conectados a bancos SQL Server, com modelagem relacional, medidas DAX autorais e indicadores orientados a pergunta de negócio. O terceiro é um desafio de bootcamp focado em criação de visuais.
+Portfólio de projetos de **Business Intelligence e Análise de Dados**, com foco na investigação de problemas de negócio, estruturação de dados e desenvolvimento de dashboards.
 
-Este repositório é parte da minha transição de 12 anos em área jurídica/societário para Dados, Analytics e BI. Cada projeto abaixo documenta o que foi construído, não apenas o resultado visual.
+Os projetos exploram como transformar dados em indicadores que facilitem a análise de operações, vendas, clientes e resultados.
 
----
 
-## Projetos
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:0E7490,45:2563EB,100:7C3AED" />
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3>💇 Studio Patty Leão — BI</h3>
-      <p>Dashboard operacional conectado a um schema de 20 tabelas que espelha um sistema real de gestão de salão (agendamento, caixa, estoque, fornecedores, notas fiscais). 19 medidas DAX autorais, incluindo projeção de faturamento e taxa de cancelamento.</p>
-      <p><code>Power BI</code> · <code>DAX</code> · <code>SQL Server</code> · <code>Power Query</code></p>
-      <p><a href="./studio-patty-leao-bi/README.md"><strong>Ver projeto →</strong></a></p>
-    </td>
-    <td width="33%" valign="top">
-      <h3>🧾 Dashboard de Vendas, Clientes e Regiões</h3>
-      <p>Dashboard analítico sobre uma base relacional de pedidos (tabela ponte para resolver M:N pedido↔item), com 14 perguntas de negócio respondidas via DAX, incluindo ranking de produto por região com RANKX + ALLEXCEPT.</p>
-      <p><code>Power BI</code> · <code>DAX</code> · <code>SQL Server</code> · <code>Modelagem Relacional</code></p>
-      <p><a href="./dashboard-vendas-clientes-regiao/README.md"><strong>Ver projeto →</strong></a></p>
-    </td>
-    <td width="33%" valign="top">
-      <h3>🎓 Desafio DIO — Análise de Vendas</h3>
-      <p>Desafio do bootcamp de Power BI da DIO: duas páginas replicadas do curso a partir da base de exemplo e uma terceira criada por mim, com mapas de vendas, unidades vendidas e lucro por país e gráfico de pizza de lucro por segmento.</p>
-      <p><code>Power BI</code> · <code>Visualizações</code> · <code>Mapas</code></p>
-      <p><a href="./desafio-dio-analise-vendas/README.md"><strong>Ver projeto →</strong></a></p>
-    </td>
-  </tr>
-</table>
+## 🚀 Projetos
 
----
-
-## O que cada dashboard resolve
-
-| Projeto | Perguntas de negócio | Tabelas no modelo | Medidas DAX |
+| Projeto | Problema | Solução | Tecnologias |
 |---|---|---|---|
-| Studio Patty Leão BI | 10 | 20 | 19 |
-| Dashboard de Vendas | 14 | 6 | 8 |
+| [**🦁 Studio Patty Leão — BI**](./studio-patty-leao-bi/README.md) | Como acompanhar diferentes áreas de um salão e seus indicadores operacionais? | Modelo relacional com 20 tabelas e dashboard com indicadores, taxa de cancelamento e projeção de faturamento. | [![Power BI](https://img.shields.io/badge/-Power%20BI-C7A24A?style=flat&logo=powerbi&logoColor=111111)](https://powerbi.microsoft.com/) [![DAX](https://img.shields.io/badge/-DAX-7C4653?style=flat)](https://learn.microsoft.com/dax/) [![Power Query](https://img.shields.io/badge/-Power%20Query-7D8B72?style=flat)](https://learn.microsoft.com/power-query/) [![SQL Server](https://img.shields.io/badge/-SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)](https://learn.microsoft.com/sql/sql-server/) |
+| [**📈 Vendas, Clientes e Regiões**](./dashboard-vendas-clientes-regiao/README.md) | Como analisar o desempenho comercial por produto, cliente e região? | Dashboard orientado por 14 perguntas de negócio, incluindo ranking de produtos por região. | [![Power BI](https://img.shields.io/badge/-Power%20BI-C7A24A?style=flat&logo=powerbi&logoColor=111111)](https://powerbi.microsoft.com/) [![DAX](https://img.shields.io/badge/-DAX-7C4653?style=flat)](https://learn.microsoft.com/dax/) [![SQL Server](https://img.shields.io/badge/-SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)](https://learn.microsoft.com/sql/sql-server/) |
+| [**🎓 Desafio DIO — Análise de Vendas**](./desafio-dio-analise-vendas/README.md) | Como visualizar e comparar vendas e rentabilidade entre países e segmentos? | Relatórios com mapas, indicadores de vendas e lucro e uma página de visualizações desenvolvida de forma autoral. | [![Power BI](https://img.shields.io/badge/-Power%20BI-C7A24A?style=flat&logo=powerbi&logoColor=111111)](https://powerbi.microsoft.com/) [![Data Visualization](https://img.shields.io/badge/-Data%20Visualization-6F7B83?style=flat)](https://learn.microsoft.com/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a) |
 
-> O Desafio DIO não entra na tabela: o foco dele é criação de visuais, não modelagem nem DAX.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:0E7490,45:2563EB,100:7C3AED" />
 
-## Estrutura do repositório
-
-```
-Portfolio_Power_BI/
-│
-├── dashboard-vendas-clientes-regiao/
-│   ├── Dashboard_Vendas_Clientes_Regiao.pbix
-│   ├── README.md
-│   └── assets/
-│
-├── desafio-dio-analise-vendas/
-│
-├── studio-patty-leao-bi/
-│   ├── Studio_Patty_Leao_BI.pbix
-│   ├── README.md
-│   └── assets/
-│
-└── README.md
-```
-
----
-
-## Observação sobre os dados
-
-Os dados dos dois dashboards conectados ao SQL Server são simulados/fictícios, gerados para fins acadêmicos e de portfólio. O Desafio DIO usa a base de exemplo fornecida pelo curso. Nenhum dado real de cliente, empresa ou terceiro foi utilizado.
-
----
-
-## Autor
+## 🧩 Competências aplicadas
 
 <div align="center">
 
-### Max Godoy
+| Área | Aplicação nos projetos |
+|:---:|---|
+| 📈 **Business Intelligence** | Indicadores e dashboards para análise de negócio |
+| 🗃️ **SQL e modelagem** | Consultas, estruturação e relacionamento entre tabelas |
+| 🧮 **DAX** | Medidas e cálculos analíticos |
+| 🔄 **Power Query** | Preparação e transformação de dados |
+| 📊 **Visualização** | Organização visual de informações e indicadores |
 
-Estudante de **Desenvolvimento de Software Multiplataforma — FATEC Zona Sul**, em transição de 12 anos em área jurídica/societário para **Dados, Analytics, BI e Automação de Processos**.
+</div>
 
-<a href="https://www.linkedin.com/in/max-godoy/">
-  <img src="https://img.shields.io/badge/LinkedIn-0F172A?style=flat-square&logo=linkedin&logoColor=C4F135" />
-</a>
-<a href="mailto:maxgodoy.dev@gmail.com">
-  <img src="https://img.shields.io/badge/E--mail-0F172A?style=flat-square&logo=gmail&logoColor=C4F135" />
-</a>
-<a href="https://github.com/maxgodoydev">
-  <img src="https://img.shields.io/badge/GitHub-0F172A?style=flat-square&logo=github&logoColor=C4F135" />
-</a>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:0E7490,45:2563EB,100:7C3AED" />
+
+## 📌 Sobre os dados
+
+Os projetos conectados ao SQL Server utilizam dados simulados ou fictícios para fins acadêmicos e de portfólio. O desafio da DIO utiliza a base de exemplo disponibilizada pelo curso.
+
+Os cenários demonstram técnicas de modelagem, análise e visualização. Os resultados não representam conclusões sobre empresas reais.
+
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:0E7490,45:2563EB,100:7C3AED" />
+
+## 👨‍💻 Sobre mim
+
+Sou estudante de **Desenvolvimento de Software Multiplataforma na FATEC Zona Sul**, em transição de carreira após 9 anos de experiência nas áreas jurídica e societária.
+
+Minha trajetória profissional me proporcionou experiência com organização, análise de informações, processos, prazos e regras de negócio. Hoje, busco aplicar essa visão ao desenvolvimento de soluções em **Business Intelligence, Dados e Analytics**.
+
+**Objetivo profissional:** oportunidades de estágio em Business Intelligence e Análise de Dados.
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=100&color=0:312E81,50:2563EB,100:0E7490" />
 
 </div>
