@@ -89,3 +89,10 @@ Minha trajetória profissional me proporcionou experiência com organização, a
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=100&color=0:312E81,50:2563EB,100:0E7490" />
 
 </div>
+
+## Documentação
+
+Os documentos complementares do projeto estão disponíveis na pasta [`docs/`](docs/).
+
+- [Melhorias futuras do portfólio](docs/melhorias.md): reúne melhorias planejadas para a evolução dos projetos.
+- [Organização dos projetos](docs/estrutura-projetos.md): apresenta recomendações para estruturar arquivos e documentar projetos de dados.
