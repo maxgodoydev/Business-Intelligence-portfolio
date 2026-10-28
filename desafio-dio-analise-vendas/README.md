@@ -1,40 +1,97 @@
-# 📊 Desafio de Projeto: Análise de Vendas com Power BI
+<div align="center">
 
-Desafio do curso **Analisando Dados com SQL Analytics e Power BI**, da DIO, trilha Universia *Primeiros passos em Power BI*, Módulo 2.
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:312E81,50:2563EB,100:0E7490&height=180&section=header&text=AN%C3%81LISE%20DE%20VENDAS&fontSize=34&fontColor=FFFFFF&fontAlignY=42&desc=Power%20BI%20%7C%20Business%20Intelligence%20%7C%20An%C3%A1lise%20de%20Dados&descSize=15&descAlignY=68" width="100%" alt="Análise de Vendas com Power BI">
 
-📂 **Base de dados:** `Financial Sample.xlsx` — 700 linhas, 5 países e 5 segmentos.
+<br>
 
-🔗 **Repositório de referência:** [julianazanelatto/power_bi_analyst](https://github.com/julianazanelatto/power_bi_analyst)
+![Power BI](https://img.shields.io/badge/Power%20BI-Analytics-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DIO](https://img.shields.io/badge/DIO-Desafio%20de%20Projeto-6C3FC5?style=for-the-badge)
+![Excel](https://img.shields.io/badge/Excel-Base%20de%20Dados-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 
-**✅ Status: concluído.**
+**Desafio de Projeto — Analisando Dados com SQL Analytics e Power BI**
 
-O relatório possui três páginas: duas replicadas do curso e uma desenvolvida por mim. O arquivo `.pbix` está disponível neste repositório, e o relatório foi publicado no Power BI Service, no Meu workspace, com acesso privado.
+</div>
 
 ---
 
-# 🖥️ 1. Demonstração dos dashboards
+## 📌 Sobre o Projeto
 
-## 📈 1.1. Sales Report
+Projeto desenvolvido no curso **Analisando Dados com SQL Analytics e Power BI**, da DIO, na trilha Universia *Primeiros passos em Power BI*, Módulo 2.
+
+O desafio utiliza a base `Financial Sample.xlsx`, composta por 700 linhas, cinco países e cinco segmentos, para desenvolver análises visuais de vendas e lucros no Power BI.
+
+O relatório possui três páginas: duas replicadas a partir do curso e uma terceira desenvolvida de forma autoral, ampliando a análise com visualizações geográficas e distribuição do lucro por segmento.
+
+### 🎯 Objetivo
+
+Desenvolver uma análise visual de vendas e lucros utilizando diferentes tipos de gráficos, organizando as informações para facilitar a interpretação dos resultados.
+
+A página autoral amplia o relatório com comparações de vendas, unidades vendidas e lucro por país, além da distribuição do lucro por segmento.
+
+### 📂 Informações do Projeto
+
+| Item | Descrição |
+|---|---|
+| Curso | Analisando Dados com SQL Analytics e Power BI |
+| Instituição | DIO — trilha Universia |
+| Módulo | Módulo 2 |
+| Base de dados | `Financial Sample.xlsx` |
+| Quantidade de registros | 700 linhas |
+| Países | 5 |
+| Segmentos | 5 |
+| Relatório | `relatorio/relatorio_criativo_desafio_modulo2.pbix` |
+| Status | ✅ Concluído |
+
+🔗 **Repositório de referência:** [julianazanelatto/power_bi_analyst](https://github.com/julianazanelatto/power_bi_analyst)
+
+---
+
+## 🖥️ Demonstração dos Dashboards
+
+O relatório está organizado em três páginas, seguindo uma sequência que começa com a análise de vendas, passa pelo detalhamento do lucro e termina com a análise geográfica autoral.
+
+### 📈 01. Sales Report
 
 *Página replicada do curso.*
 
 <img src="demo/pagina1.png" alt="Página 1: Sales Report" width="100%" />
 
+**Análises contempladas:**
+
+- ✅ Indicadores e cards de vendas.
+- ✅ Comparações por meio de gráficos de áreas e barras.
+- ✅ Distribuição visual por treemap, mapa e gráfico de rosca.
+- ✅ Utilização de filtros para explorar os dados.
+
 <!-- VÍDEO PÁGINA 1: cole aqui a URL https://github.com/user-attachments/assets/... sozinha numa linha, sem colchetes e sem link -->
 
-## 💰 1.2. Report de Lucro Detalhado
+### 💰 02. Report de Lucro Detalhado
 
 *Página replicada do curso.*
 
 <img src="demo/pagina2.png" alt="Página 2: Report de Lucro Detalhado" width="100%" />
 
+**Análises contempladas:**
+
+- ✅ Exploração do lucro por meio de árvore de decomposição.
+- ✅ Análise de variações com gráfico de cascata.
+- ✅ Comparação visual com gráfico radar.
+- ✅ Distribuição por treemap.
+
 <!-- VÍDEO PÁGINA 2: cole aqui a URL https://github.com/user-attachments/assets/... sozinha numa linha, sem colchetes e sem link -->
 
-## 🌎 1.3. Análise Geográfica
+### 🌎 03. Análise Geográfica
 
 *Página autoral, desenvolvida para este desafio.*
 
 <img src="demo/pagina3.png" alt="Página 3: Análise Geográfica" width="100%" />
+
+**Perguntas de negócio respondidas:**
+
+- ✅ Como as vendas se distribuem entre os países?
+- ✅ Como as unidades vendidas se distribuem geograficamente?
+- ✅ Quais países apresentam maior lucro?
+- ✅ Como o lucro está distribuído entre os segmentos?
 
 <!-- VÍDEO PÁGINA 3: cole aqui a URL https://github.com/user-attachments/assets/... sozinha numa linha, sem colchetes e sem link -->
 
@@ -42,23 +99,23 @@ O relatório possui três páginas: duas replicadas do curso e uma desenvolvida 
 
 ---
 
-# 🎯 2. Objetivo do desafio
+## 🎯 Objetivo e Organização das Páginas
 
-Desenvolver uma análise visual das vendas e dos lucros utilizando o Power BI, explorando diferentes tipos de gráficos e organizando as informações para facilitar a interpretação dos resultados.
-
-A terceira página amplia o relatório com uma análise geográfica, comparando vendas, unidades vendidas e lucro por país, além da distribuição do lucro por segmento.
-
----
-
-# 📄 3. Organização das páginas
+O projeto foi desenvolvido para explorar diferentes formas de visualização e análise de dados no Power BI.
 
 | Página | Conteúdo | Origem |
 |---|---|---|
-| 📈 1 | Dashboard de vendas: cards, áreas, barras, treemap, mapa, rosca e filtros | Replicada do curso |
-| 💰 2 | Report de lucro detalhado: árvore de decomposição, cascata, radar e treemap | Replicada do curso |
-| 🌎 3 | **Análise Geográfica:** mapas de vendas e lucro por país e gráfico de pizza por segmento | Autoral |
+| 📈 01 | Dashboard de vendas: cards, áreas, barras, treemap, mapa, rosca e filtros | Replicada do curso |
+| 💰 02 | Relatório de lucro detalhado: árvore de decomposição, cascata, radar e treemap | Replicada do curso |
+| 🌎 03 | Análise geográfica: mapas de vendas e lucro por país e gráfico de pizza por segmento | Autoral |
 
-## 🗺️ 3.1. Visuais da página Análise Geográfica
+---
+
+## 🗺️ Visuais da Página Análise Geográfica
+
+A terceira página foi desenvolvida para ampliar o relatório com comparações geográficas e análise do lucro por segmento.
+
+### 📊 Configuração dos Visuais
 
 | Visual | Tipo | Campos utilizados | Título |
 |---|---|---|---|
@@ -66,19 +123,22 @@ A terceira página amplia o relatório com uma análise geográfica, comparando 
 | 💵 Mapa 2 | Mapa de bolhas | Localização: `Country` · Tamanho: soma de `Profit` | Lucro (Profit) por País |
 | 🥧 Gráfico 3 | Gráfico de pizza | Legenda: `Segment` · Valores: soma de `Profit` | Lucro (Profit) por Segmento |
 
-**📐 Organização visual:** o mapa de vendas fica em destaque à esquerda, enquanto o mapa de lucro e o gráfico de pizza ficam empilhados à direita.
+### 📐 Organização Visual
 
-O cabeçalho reaproveita o padrão visual da página 2, com fundo, logo, título e botão de voltar.
+- ✅ Mapa de vendas em destaque à esquerda.
+- ✅ Mapa de lucro posicionado à direita.
+- ✅ Gráfico de pizza empilhado abaixo do mapa de lucro.
+- ✅ Cabeçalho reaproveitando o padrão visual da página 2, com fundo, logo, título e botão de voltar.
 
 ---
 
-# 🔎 4. Valores de conferência
+## 🔎 Valores de Conferência
 
 Os valores abaixo foram calculados diretamente do Excel para conferir os resultados dos visuais da terceira página.
 
 > ℹ️ Os percentuais exibidos na pizza foram conferidos no Power BI Service em 28/09/2026.
 
-## 🌎 4.1. Resultados por país
+### 🌎 Resultados por País
 
 | País | Sales | Units Sold | Profit |
 |---|---:|---:|---:|
@@ -88,7 +148,7 @@ Os valores abaixo foram calculados diretamente do Excel para conferir os resulta
 | Germany | 23.505.340,82 | 201.494,0 | 3.680.388,82 |
 | Mexico | 20.949.352,11 | 203.325,0 | 2.907.523,11 |
 
-## 🥧 4.2. Resultados por segmento
+### 🥧 Resultados por Segmento
 
 | Segmento | Profit | % do total | % exibido na pizza |
 |---|---:|---:|---:|
@@ -100,9 +160,9 @@ Os valores abaixo foram calculados diretamente do Excel para conferir os resulta
 
 ---
 
-# ⚠️ 5. Pontos de atenção nos dados
+## ⚠️ Pontos de Atenção nos Dados
 
-### 🔴 5.1. Lucro negativo no segmento Enterprise
+### 🔴 Lucro Negativo no Segmento Enterprise
 
 O segmento Enterprise apresenta lucro total negativo.
 
@@ -110,17 +170,17 @@ Gráficos de pizza e rosca não representam adequadamente valores negativos. Por
 
 Os percentuais exibidos na pizza diferem dos percentuais calculados sobre o total porque a visualização considera apenas os segmentos positivos.
 
-💡 **Alternativa analítica:** para comparar lucros positivos e negativos, um gráfico de barras permite representar melhor os resultados. A pizza foi mantida para atender à proposta do exercício.
+**💡 Alternativa analítica:** para comparar lucros positivos e negativos, um gráfico de barras permite representar melhor os resultados. A pizza foi mantida para atender à proposta do exercício.
 
-### 🟡 5.2. Nome da coluna Sales
+### 🟡 Nome da Coluna Sales
 
 A coluna de vendas no Excel de origem chama-se `" Sales"`, com um espaço no início.
 
 Isso não impede necessariamente a construção dos visuais, mas pode causar erros em expressões DAX e etapas do Power Query se a referência for digitada como `[Sales]`.
 
-✅ **Boa prática:** renomear a coluna para `Sales` no Power Query.
+**✅ Boa prática:** renomear a coluna para `Sales` no Power Query.
 
-### 🔵 5.3. Funcionamento dos mapas
+### 🔵 Funcionamento dos Mapas
 
 Os mapas dependem do serviço de mapas do Power BI e das configurações do ambiente.
 
@@ -130,7 +190,7 @@ Em outros ambientes, os mapas podem aparecer em branco caso esse recurso esteja 
 
 ---
 
-# 🚀 6. Status do desafio
+## 🚀 Status do Desafio
 
 | Item do enunciado | Status |
 |---|---|
@@ -148,7 +208,7 @@ Em outros ambientes, os mapas podem aparecer em branco caso esse recurso esteja 
 
 ---
 
-# ☁️ 7. Publicação no Power BI Service
+## ☁️ Publicação no Power BI Service
 
 O relatório foi publicado no Power BI Service, no **Meu workspace**, com as três páginas e os mapas renderizando.
 
@@ -160,7 +220,7 @@ A imagem abaixo serve como evidência da publicação, mostrando a página **An�
 
 ---
 
-# 📁 8. Estrutura do projeto
+## 📁 Estrutura do Projeto
 
 ```text
 .
@@ -182,13 +242,13 @@ A imagem abaixo serve como evidência da publicação, mostrando a página **An�
 
 ---
 
-# 🛠️ 9. Como abrir o projeto
+## 🛠️ Como Abrir o Projeto
 
 **Requisito:** Power BI Desktop para Windows.
 
 Na primeira abertura, podem ser necessários alguns ajustes de ambiente.
 
-### 1️⃣ Configurar a fonte de dados
+### 1️⃣ Configurar a Fonte de Dados
 
 O Power BI pode armazenar o caminho absoluto do arquivo Excel.
 
@@ -197,13 +257,13 @@ O Power BI pode armazenar o caminho absoluto do arquivo Excel.
 3. Clique em **Fechar e aplicar**.
 4. Atualize os dados.
 
-### 2️⃣ Instalar os visuais personalizados
+### 2️⃣ Instalar os Visuais Personalizados
 
 A página 2 utiliza os visuais **Chiclet Slicer** e **Radar Chart**.
 
 Caso não estejam disponíveis, procure-os em **Visualizações → Obter mais visuais**.
 
-### 3️⃣ Habilitar os mapas
+### 3️⃣ Habilitar os Mapas
 
 No Power BI Desktop, acesse:
 
@@ -211,29 +271,24 @@ No Power BI Desktop, acesse:
 
 Habilite a opção **Usar visuais de mapa e mapa de preenchimento** e reinicie o Desktop, se necessário.
 
-### 4️⃣ Conferir os resultados
+### 4️⃣ Conferir os Resultados
 
-Abra a página **Análise Geográfica** e compare os visuais com os valores apresentados na seção 4.
+Abra a página **Análise Geográfica** e compare os visuais com os valores apresentados na seção de conferência.
 
 Se preferir reconstruir a terceira página do zero, consulte o guia [`docs/GUIA_PAGINA_3_MANUAL.md`](docs/GUIA_PAGINA_3_MANUAL.md).
 
 ---
 
-<p align="center">
-  <strong>📊 Análise de Vendas com Power BI</strong><br/>
-  Transformando dados em visualizações para apoiar a análise de resultados.
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://github.com/julianazanelatto/power_bi_analyst">📚 Repositório do curso</a>
-  &nbsp;•&nbsp;
-  <a href="https://github.com/maxgodoydev/Portfolio_Power_BI">💼 Portfólio Power BI</a>
-</p>
+**📊 Análise de Vendas com Power BI**
 
-<p align="center">
-  <sub>Projeto de estudo • DIO • Power BI • Análise de Dados</sub>
-</p>
+Transformando dados em visualizações para apoiar a análise de resultados.
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=100&color=0:312E81,50:2563EB,100:0E7490" width="100%" alt="Rodapé do projeto" />
-</p>
+📚 [Repositório do curso](https://github.com/julianazanelatto/power_bi_analyst) · 💼 [Portfólio Power BI](https://github.com/maxgodoydev/Portfolio_Power_BI)
+
+<sub>Projeto de estudo · DIO · Power BI · Análise de Dados</sub>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=100&color=0:312E81,50:2563EB,100:0E7490" width="100%" alt="Rodapé do projeto">
+
+</div>
